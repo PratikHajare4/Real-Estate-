@@ -55,7 +55,7 @@ export default function Footer() {
       </tbody>
     </table>
   </div>
-  <div className="footer-credits">
+  <div className="footer-credits bg-[#ffb703]">
     <table>
       <td>© 2024 HomeAssist.com. All Right Reserved.</td>
       {/* <td>Designed By:Komal Dhawade</td> */}

@@ -125,14 +125,11 @@ function Home() {
 
   return (
     <div className="search-container ">
-      <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      
 
-      <h1 className='z-10 text-[20px]' style={{ fontSize: '20px', color: '#ffb703' }}>It's Great to be home!</h1>
-      <h1 className='z-10 text-[70px]' style={{ fontSize: '70px', color: '#ffb703' }}>Find Your Perfect Home</h1>
-      <div className="tabs">
-        <button onClick={() => setPropertyType('residential')} className={propertyType === 'residential' ? 'active' : ''}>Residential</button>
-        <button onClick={() => setPropertyType('commercial')} className={propertyType === 'commercial' ? 'active' : ''}>Commercial</button>
-      </div>
+      <h1 className='z-10 text-[20px] text-[#ffb703]' >It's Great to be home!</h1>
+      <h1 className='z-10 text-[70px] text-[#ffb703]'  >Find Your Perfect Home</h1>
+    
       <form onSubmit={handleSubmit}>
         {/* <select className='ram' value={unitType} onChange={e => setUnitType(e.target.value)}>
           <option value="">Select Unit Type</option>
@@ -140,14 +137,14 @@ function Home() {
           <option value="house">House</option>
         </select> */}
         {/* <input type="text" className="search-city-input" placeholder="Search city" value={city} onChange={e => setCity(e.target.value)} /> */}
-        <input type="text" className="search-city-input text-black " placeholder="Search location" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} />
-        <input type="text" className="search-city-input text-black" placeholder="Search name" value={searchName} onChange={e => setSearchName(e.target.value)} />
+        <input type="text" className="search-city-input text-black flex justify-center outline-none text-center border border-[#ffb703] rounded-2xl " placeholder="Search location" value={searchLocation} onChange={e => setSearchLocation(e.target.value)} />
+        <input type="text" className="search-city-input text-black flex justify-center outline-none text-center border border-[#ffb703] rounded-2xl" placeholder="Search name" value={searchName} onChange={e => setSearchName(e.target.value)} />
         {/* <select className='ram' value={budget} onChange={e => setBudget(e.target.value)}>
           <option value="">Select Budget</option>
           <option value="250000">$250,000</option>
           <option value="500000">$500,000</option> 
         </select> */}
-        <button type="submit" className="search-button"><FaSearch style={{ marginRight: '8px', fontSize: '16px' }} />SEARCH</button>
+        <button type="submit" className="search-button rounded-2xl"><FaSearch style={{ marginRight: '8px', fontSize: '16px' }} />SEARCH</button>
       </form>
       
       <div className="p-5 z-10">
